@@ -1,23 +1,57 @@
-# HNQSM---A-Novel-Hybrid-Neural-Quantum-Approach-for-Advanced-Speaker-Verification-and-Identification
-This repository contains the official implementation of **HNQSM (Hybrid Neural Quantum Speaker Model)** — a novel hybrid deep learning and quantum-inspired architecture for **Speaker Identification (SI)** and **Speaker Verification (SV)**. HNQSM combines the strengths of **Convolutional Neural Networks (CNN)**, **Quantum Convolutional Neural Networks (QCNN)**, and **Siamese Neural Networks (SNN)** to achieve high accuracy and robustness in noisy environments.
+# 🔊 HNQSM: Hybrid Neural-Quantum Speaker Model for Speaker Verification & Identification
 
-## 🚀 Features
+This repository contains the **Jupyter notebook implementation** of **HNQSM (Hybrid Neural Quantum Speaker Model)**, a novel architecture for **speaker verification and identification** that combines classical deep learning with quantum-inspired computation.
 
-- ✅ **Quantum-Enhanced Classification** using QCNN for deeper feature abstraction
-- ✅ **Siamese Verification Layer** for robust pairwise speaker comparison
-- ✅ **Dimensionality Reduction** to address the curse of dimensionality and improve runtime
-- ✅ **Real-World Dataset Support**: Tested on **RAVDESS** and **VoxCeleb1**
-- ✅ **Low EER and High Accuracy**, outperforming traditional DL models
-- ✅ **SHAP-based Feature Importance** visualization
-- ✅ **Ablation Study** included to assess individual module contributions
+HNQSM integrates:
+- 🧠 **CNN** for extracting refined acoustic features
+- ⚛️ **QCNN** (Quantum Convolutional Neural Network) for efficient feature transformation
+- 🧬 **Siamese Neural Network (SNN)** for speaker verification via pairwise matching
 
-## 📁 Repository Structure
+> 📓 The entire workflow — from preprocessing to evaluation — is implemented in the notebook:  
+📄 `Copy_of_Speaker_verification+identification.ipynb`
+
+---
+
+## 📌 Highlights
+
+- ✅ Real-world speech datasets: **RAVDESS** and **VoxCeleb1 (subset)**
+- ✅ Speaker classification and verification from raw WAV files
+- ✅ SHAP-based feature importance to interpret model behavior
+- ✅ Ablation study to evaluate contributions of CNN, QCNN, and SNN
+- ✅ Runtime and Equal Error Rate (EER) analysis
+- ✅ Robust to noisy environments and high speaker variability
+
+---
+
+## 📁 Files
+
+- `Copy_of_Speaker_verification+identification.ipynb`: Main notebook with full pipeline
+- `README.md`: Project overview and usage guide
+
+> Additional modules (e.g., preprocessing scripts or audio folders) can be added later to extend functionality.
+
+---
+
+## 🗃️ Datasets
+
+- **RAVDESS**: Emotionally balanced dataset with clean speech
+- **VoxCeleb1 (subset)**: Noisy, unconstrained real-world speaker recordings  
+Both datasets are publicly available and must be downloaded separately.
+
+---
+
+## 📊 Evaluation Metrics
+
+- Equal Error Rate (EER)  
+- Precision, Recall, F1-score  
+- ROC Curve, SHAP plots  
+- Runtime benchmarks
+
+---
+
+## ⚙️ Setup Instructions
+
+Install the required packages before running the notebook:
 
 ```bash
-├── data/                   # Dataset loaders and preprocessors
-├── models/                 # CNN, QCNN, SNN architectures
-├── utils/                  # Helper functions and feature extraction
-├── notebooks/              # Jupyter notebooks for SHAP and results
-├── experiments/            # Training and evaluation scripts
-├── results/                # Evaluation metrics, plots, and figures
-└── README.md               # This file
+pip install pandas numpy librosa matplotlib scikit-learn tensorflow pennylane shap
