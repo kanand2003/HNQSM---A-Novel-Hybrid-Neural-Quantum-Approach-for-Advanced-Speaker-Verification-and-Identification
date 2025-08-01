@@ -1,0 +1,1 @@
+# HNQSM---A-Novel-Hybrid-Neural-Quantum-Approach-for-Advanced-Speaker-Verification-and-Identification
