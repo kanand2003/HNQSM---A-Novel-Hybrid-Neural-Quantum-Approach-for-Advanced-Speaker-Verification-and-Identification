@@ -8,7 +8,7 @@ HNQSM integrates:
 - 🧬 **Siamese Neural Network (SNN)** for speaker verification via pairwise matching
 
 > 📓 The entire workflow — from preprocessing to evaluation — is implemented in the notebook:  
-📄 `Copy_of_Speaker_verification+identification.ipynb`
+📄 `Speaker_verification+identification.ipynb`
 
 ---
 
@@ -25,7 +25,7 @@ HNQSM integrates:
 
 ## 📁 Files
 
-- `Copy_of_Speaker_verification+identification.ipynb`: Main notebook with full pipeline
+- `Speaker_verification+identification.ipynb`: Main notebook with full pipeline
 - `README.md`: Project overview and usage guide
 
 > Additional modules (e.g., preprocessing scripts or audio folders) can be added later to extend functionality.
